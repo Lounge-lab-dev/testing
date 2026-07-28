@@ -57,7 +57,7 @@ html, body {
   color: var(--cream);
   overflow-x: hidden;
   font-family: 'DxRuiga', 'Inter', sans-serif;
-  height: 100%;
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -288,6 +288,7 @@ nav {
 .hero-wrapper {
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
 }
