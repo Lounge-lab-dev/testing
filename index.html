@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kavon — Designs That Can't Be Ignored</title>
+
+  <!-- Google Fonts: Paris2024 has no Google equivalent so we pair Inter (for DxRuiga fallback) + the embedded Paris2024 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- page-load overlay -->
+  <div class="transition-overlay" id="pageOverlay"></div>
+
+  <!-- ── HERO WRAPPER ── -->
+  <div class="hero-wrapper">
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a class="nav-logo" href="#">
+        <div class="logo-badge">
+          <svg viewBox="0 0 436 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M365.93,2.21c-47.12-2.95-80.31,52.58-80.31,52.58,0,0-34,52.29-62.61,95.21-28.69,42.92-69.1,68.66-69.1,68.66,0,0,40.41,25.81,69.1,68.66,28.61,42.92,62.61,95.21,62.61,95.21,0,0,33.19,55.53,80.31,52.58,47.13-2.95,70.13-49.11,70.13-76.11V78.32c0-26.99-23.01-73.16-70.13-76.11ZM377.58,348.75c0,22.42-9.07,20.8-9.07,20.8-22.2-.89-47.57-37.98-65.05-68.44-17.48-30.53-59.07-82.45-59.07-82.45,0,0,41.59-51.92,59.07-82.45,17.48-30.46,42.85-67.55,65.05-68.44,0,0,9.07-1.62,9.07,20.87v260.11Z" fill="#1A1714"/>
+            <path d="M247.57,437.32h-59.07c-19.47,0-24.33-10.99-24.33-10.99,0,0-14.6-24.34-45.35-69.69-30.75-45.36-59.59-39.09-59.59-39.09v115.27c-23.52-5.39-37.91-21.09-46.61-36.58-8.48-15.04-12.61-32.15-12.61-49.41v-97.2h44.69c76.92,0,119.25,64.23,119.25,64.23l83.63,123.45Z" fill="#1A1714"/>
+            <path d="M247.57,0l-83.63,123.45s-42.33,64.23-119.25,64.23H0v-97.2c0-17.26,4.13-34.29,12.61-49.41C21.31,25.66,35.69,9.88,59.22,4.5v115.27s28.83,6.27,59.59-39.08c30.75-45.36,45.35-69.69,45.35-69.69,0,0,4.87-10.99,24.33-10.99h59.07Z" fill="#1A1714"/>
+          </svg>
+        </div>
+        <span class="logo-wordmark" id="logoWordmark">Kavon</span>
+      </a>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <div class="menu-lines"><span></span><span></span></div>
+      </button>
+    </nav>
+
+    <div class="nav-menu" id="navMenu" aria-hidden="true">
+      <div class="nav-menu-bg"></div>
+      <div class="nav-menu-content">
+        <a href="#home" class="nav-menu-link">Home</a>
+        <a href="#projects" class="nav-menu-link">Projects</a>
+        <a href="#about" class="nav-menu-link">About</a>
+        <a href="#contact" class="nav-menu-link">Contact</a>
+      </div>
+      <div class="nav-menu-footer">
+        <span>Kavon Studio</span>
+        <span>Designs That Can't Be Ignored</span>
+      </div>
+    </div>
+
+    <!-- HERO STAGE -->
+    <div class="hero-stage" id="heroStage">
+      <!-- Slide 01 — Boyam -->
+      <div class="slide active" id="slide-0" data-theme="dark" data-meta="Boyam / Branding / 3D">
+        <div class="slide-bg" style="background-image: url('imgs/Boyam landing page.png');"></div>
+      </div>
+      <!-- Slide 02 — Forno (light bg — indicators turn dark) -->
+      <div class="slide" id="slide-1" data-theme="light" data-meta="Forno / Web Design / Dev">
+        <div class="slide-bg" style="background-image: url('imgs/Forno landing page.png'); background-position: center 40%;"></div>
+      </div>
+      <!-- Slide 03 — Kavon -->
+      <div class="slide" id="slide-2" data-theme="dark" data-meta="Kavon / Identity / Web">
+        <div class="slide-bg" style="background-image: url('imgs/Kavon\ landing\ page\ 2.png'); background-position: center 30%;"></div>
+      </div>
+
+      <!-- Slide indicators -->
+      <div class="slide-indicators" id="slideIndicators">
+        <div class="slide-tab active" data-idx="0"><span class="slide-tab-num">01</span></div>
+        <div class="slide-tab" data-idx="1"><span class="slide-tab-num">02</span></div>
+        <div class="slide-tab" data-idx="2"><span class="slide-tab-num">03</span></div>
+      </div>
+
+      <!-- Meta bar -->
+      <div class="hero-stage-meta" id="heroStageMeta">
+        <span class="hero-stage-meta-left">
+          <span class="meta-arrow meta-arrow--left" aria-hidden="true"></span>
+          Drag to Explore
+          <span class="meta-arrow meta-arrow--right" aria-hidden="true"></span>
+        </span>
+        <span class="hero-stage-meta-right" id="heroStageMetaRight">
+          <span class="hero-stage-meta-right-inner" id="heroStageMetaRightInner">
+            Boyam / Branding / 3D<span class="hero-stage-meta-arrow-wrap" aria-hidden="true"><span class="hero-stage-meta-arrow"></span><span class="hero-stage-meta-arrow hero-stage-meta-arrow-dup"></span></span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <!-- BRAND BAR -->
+    <div class="hero-bottom">
+      <div class="tagline" id="tagline">
+        <div class="tagline-line">Designs That</div>
+        <div class="tagline-line">Can't Be <span class="accent">Ignored</span></div>
+      </div>
+
+      <div class="tag">
+        <span class="left-kavon-playful" aria-hidden="true"></span>
+      </div>
+    </div>
+
+  </div><!-- /hero-wrapper -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
